@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>	
+	
+</head>
+<body>
+	<div class="container">
+	<div id="quiz">
+		<h1>Movie Quiz</h1>
+		<hr>
+		<div class="row main">
+			<div class="col-lg-6 col-sd-12 filme-thumb">
+				<div><img src="" alt="" class="img"></div>
+			</div>
+			<div class="col-lg-6 col-sd-12">
+				<form id="form" class="clearfix">
+					<div class="form-group row">
+						<label for="resposta-quiz" class="rotulo-input">Qual o nome do diretor do filme ao lado?</label>
+						<input type="text" class="form-control" id="resposta-quiz" placeholder="Sua resposta aqui" required="true">
+						<button type="submit" class="btn btn-default pull-right " id="enviar"><span class="glyphicon glyphicon-ok"></span></button>
+					</div>					
+				</form>
+				<div class="pontos">
+					<ul class="pontuacao">
+						
+					</ul>			
+				</div>
+				<div class="row botoes">					
+					<div class="col-lg-6 pull-right">
+						<a href="#" class="btn btn-info btn-lg" id="btn-ajuda" data-toggle="modal" data-target="#myModal">Precisa de um help?</a>
+					</div>								
+				</div>
+			</div>
+		</div>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+			<div class="modal-dialog modal-lg">
+			  <div class="modal-content">
+			    <div class="modal-header">
+			      <button type="button" class="close" data-dismiss="modal">&times;</button>
+			      <h4 class="modal-title">Vai uma ajudinha?</h4>
+			    </div>
+			    <div class="modal-body">
+			      <p class="txt-modal">Teste para modal</p>
+			    </div>
+			    <div class="modal-footer">
+			      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			    </div>
+			  </div>
+			</div>
+		</div>
+	</div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

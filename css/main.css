@@ -1,0 +1,71 @@
+*{
+	box-sizing: border-box;
+}
+#quiz {
+	width: 80%;
+	height: 500px;	
+	margin: 20px auto 0;
+	background-color: #2c3e50;
+	border-radius: 5px;
+	padding: 20px;
+}
+#quiz h1{
+	color: #ddd;
+	text-align: center;
+	padding: 10px;	
+}
+.filme-thumb{	
+	text-align: center;
+}
+.filme-thumb img {		
+	-moz-box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 6px 6px 14px 0px rgba(0,0,0,0.75);
+}
+.main{
+	padding-top: 30px;
+}
+form {
+	margin: 10px 15px 0 15px;
+	position: relative;
+}
+.rotulo-input{
+	color: #fff;
+	font-size: 1.5em;
+}
+#enviar{
+	position: absolute;
+	top: 36px;
+	right: -15px;
+	margin: 0;
+	font-size: 14px;
+	border: transparent;
+}
+#enviar span{
+	color: #27ae60;
+}
+.pontos{
+	margin: 40px 0;
+}
+.pontos ul{	
+	list-style: none;
+	display: flex;	
+}	
+.pontos ul li{
+	flex-grow: 1;
+	font-size: 2em;	
+	font-weight: bolder;
+}
+.acertou{
+	color: green;
+}
+.errou{
+	color: red;
+}
+/*.pontos p{
+	font-size: 50px;
+	color: #fff;
+	font-weight: bolder;
+}*/
+.botoes{
+	margin-top: 60px;	
+}
