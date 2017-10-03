@@ -8,20 +8,20 @@ var url = "http://www.theimdbapi.org/api/movie?movie_id="+rand;
 
 xmlhttp.onreadystatechange = function(){
 	if(this.readyState == 4 && this.status == 200) {
-		var myObj = JSON.parse(this.responseText);					
-		var form = document.getElementById('form');	
-		// document.getElementById("demo").innerHTML = myObj.title;
+		var myObj = JSON.parse(this.responseText);				
+		var i =1;
+
 		$('.img').attr('src', myObj.poster.thumb); 
 		$('#btn-ajuda').click(function(){
 			$('.txt-modal').html(myObj.storyline);
-		});
-		var i =1;
+		});		
 		$('#enviar').click(function(){
 			var diretor = myObj.director;
 			var resposta = $('#resposta-quiz').val();
 			if(i <= 10){
 				if(diretor === resposta){				
-					$('.pontuacao').append('<li class="acertou">' + i + '</li>');					
+					$('.pontuacao').append('<li class="acertou">' + i + '</li>');
+									
 					i++;				
 				} else{
 					$('.pontuacao').append('<li class="errou">' + i + '</li>');
@@ -30,8 +30,7 @@ xmlhttp.onreadystatechange = function(){
 			}else{
 				alert("Suas chances acabaram meu xovem")
 			}				
-		});
-		
+		});		
 	}
 }
 
